@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+     <dimen name="apps_width">324dp</dimen>
+     <dimen name="apps_height">185dp</dimen>
+     <dimen name="launcher_app_marginTop">5dp</dimen>
+     <dimen name="launcher_app_marginLeft">3dp</dimen>
+     
+     <dimen name="apps_name_size">20sp</dimen>
+    
+</resources>
