@@ -39,25 +39,25 @@ public class MainActivity extends Activity implements OnClickListener {
     private TextView tvWeek;
 
     private RecyclerView mRecyclerView;
-    private GridLayoutManager mLayoutManager;
     private ItemTouchHelper mItemTouchHelper;
     private RecyclerViewAdapter mAdapter;
     private ArrayList<App> apps;
+    GridLayoutManager mLayoutManager;
 
-    private App radio;
-    private App media;
-    private App btPhone;
-    private App navigate;
-    private App setting;
-    private App phoneConnection;
-    private App onlineEntertainment;
-    private App drivingRecord;
-    private App calendar;
-    private App voice;
+    App radio;
+    App media;
+    App btPhone;
+    App navigate;
+    App setting;
+    App phoneConnection;
+    App onlineEntertainment;
+    App drivingRecord;
+    App calendar;
+    App voice;
 
-    private String mTime;
-    private final String DEFAULT_TIME_FORMAT = "HH:mm";
-    private final String DEFAULT_DATE_FORMAT = "yyyy.MM.dd";
+    String mTime;
+    final String DEFAULT_TIME_FORMAT = "HH:mm";
+    final String DEFAULT_DATE_FORMAT = "yyyy.MM.dd";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,7 +65,6 @@ public class MainActivity extends Activity implements OnClickListener {
         setContentView(R.layout.activity_main);
 
         initView();
-
         timeHandler.post(updateTime);
     }
 
