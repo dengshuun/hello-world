@@ -69,6 +69,10 @@ public class MainActivity extends Activity implements OnClickListener {
     }
 
     private void initView() {
+
+        ArrayList<Integer> list = new ArrayList<>();
+        Log.d("111","list.size() : " + list.size());
+
         tvTime = (TextView) findViewById(R.id.txt_time);
         tvDate = (TextView) findViewById(R.id.txt_date);
         tvWeek = (TextView) findViewById(R.id.txt_week);
