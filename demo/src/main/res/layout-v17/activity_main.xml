@@ -11,4 +11,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+    <TextClock
+        android:format24Hour="HH:mm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>

@@ -186,27 +186,26 @@ public class MainActivity extends Activity implements OnClickListener {
         }
     };
 
-    private String getWeek(int week) {
+    private int getWeek(int week) {
         switch (week) {
             case 1:
-                return "星期日";
+                return R.string.Sunday;
             case 2:
-                return "星期一";
+                return R.string.Monday;
             case 3:
-                return "星期二";
+                return R.string.Tuesday;
             case 4:
-                return "星期三";
+                return R.string.Wednesday;
             case 5:
-                return "星期四";
+                return R.string.Thursday;
             case 6:
-                return "星期五";
+                return R.string.Friday;
             case 7:
-                return "星期六";
-
+                return R.string.Saturday;
             default:
                 break;
         }
-        return "星期一";
+        return R.string.Sunday;
     }
 
     @Override

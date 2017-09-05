@@ -2,6 +2,7 @@
 <resources>
 
     <string name="app_name">Launcher</string>
+    <string name="title_activity_warning">Warning</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="warning">警告</string>
@@ -23,6 +24,12 @@
     <string name="txt_driving_record">行车记录</string>
     <string name="txt_calendar">日历</string>
     <string name="txt_voice">语音识别</string>
-    <string name="title_activity_warning">Warning</string>
+    <string name="Sunday">星期日</string>
+    <string name="Monday">星期一</string>
+    <string name="Tuesday">星期二</string>
+    <string name="Wednesday">星期三</string>
+    <string name="Thursday">星期四</string>
+    <string name="Friday">星期五</string>
+    <string name="Saturday">星期六</string>
 
 </resources>
