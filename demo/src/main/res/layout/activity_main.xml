@@ -1,14 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:orientation="vertical"
-    tools:context="com.example.demo.MainActivity">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
 
-    <com.example.demo.SwitchBar
+    <RelativeLayout
+        android:id="@+id/layout_blower_mode"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="11"
+        android:gravity="center">
+
+        <com.example.demo.IrregularImageView
+            android:id="@+id/iv_blower_front"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/blower_front"
+            android:visibility="visible" />
+
+        <com.example.demo.IrregularImageView
+            android:id="@+id/iv_blower_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/iv_blower_front"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-90dp"
+            android:background="@drawable/blower_up"
+            android:visibility="visible" />
+
+        <com.example.demo.IrregularImageView
+            android:id="@+id/iv_blower_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_blower_front"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-85dp"
+            android:background="@drawable/blower_down"
+            android:visibility="visible" />
+    </RelativeLayout>
 
 </LinearLayout>
